@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "georgestac-evalplat_jd276"
+version = "0.1.0"
+description = "从输入中抽取数值，计算模型评测平台工程师·长上下文的位置编码外推相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "georgestac" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://georgestac.github.io"
+Repository = "https://github.com/georgestac/evalplat_jd276"
+Issues = "https://github.com/georgestac/evalplat_jd276/issues"
+
+[project.scripts]
+evalplat_jd276 = "evalplat_jd276:main"
+
+[tool.setuptools]
+py-modules = ["evalplat_jd276"]
